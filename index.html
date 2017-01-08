@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Portfolio Advisory Partners</title>
-
+	
+	  <!-- you forgot to add the meta  tag -->
+		<title> Portfolio Advisory Partners </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -23,6 +25,7 @@
 				<div class="row">
 				<table class="countdownContainer col-sm-4">
 					<tr class="info">
+					<!-- this will hold the value -->
 						<td id="days"></td>
 						<td id="hours"></td>
 						<td id="minutes"></td>
@@ -40,7 +43,7 @@
 				<div class="contact">
 					<p>P: <a href="tel:+23414542327">+234-1-454-2327</a> , <a href="tel:+2348083094443">+234-808-309-4443</a> .</p>
 					<p><a target="_blank" href="https://www.google.com.ng/maps/place/Oniru+Estate/@6.4311489,3.4567046,198m/data=!3m1!1e3!4m12!1m6!3m5!1s0x103bf506fbc6430b:0x626226e105c36107!2sOniru+Estate!8m2!3d6.4311285!4d3.4569808!3m4!1s0x103bf506fbc6430b:0x626226e105c36107!8m2!3d6.4311285!4d3.4569808">D83, GAT Oboh Street, Oniru Millenium estate, Oniru, Lagos, Nigeria.</a></p>
-					<p>P.O. BOX 72021, Victoria Island, Lagos, Nigeria.</p>
+					<p> P.O. BOX 72021, Victoria Island, Lagos, Nigeria.</p>
 					<p id="down"><a href="mailto:mails@portfolioadvisorypartners.com">mails@portfolioadvisorypartners.com</a></p>
 				</div>
 				</div>
@@ -50,7 +53,7 @@
 		<script type="text/javascript">
 			function countdown(){
 				var now = new Date();
-				var eventDate = new Date(2017, 01, 30);
+				var eventDate = new Date("2017-01-30");
 
 				var currentTiime = now.getTime();
 				var eventTime = eventDate.getTime();
@@ -58,9 +61,12 @@
 				var remTime = eventTime - currentTiime;
 
 				var s = Math.floor(remTime/1000);
+				<!-- to get minute divide seconds by 60 -->
 				var m = Math.floor(s/60);
-				var h = Math.floor(h/60);
-				var d = Math.floor(d/24);
+				<!-- to get hour divide minute by 60 -->
+				var h = Math.floor(m/60);
+				<!-- to get date divide hour by 24-->
+				var d = Math.floor(h/24);
 
 				h %= 24;
 				m %= 60;
