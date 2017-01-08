@@ -1,0 +1,72 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	background: url("../img/bg.jpg") no-repeat center center fixed;
+	background-repeat:no-repeat;
+   	background-size: cover;
+   	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+   	color: #fff;
+   	height: 100%;
+   	width: 100%;
+}
+a {
+	color: #F2C94C;
+	font-size: 1.0em;
+}
+p {
+	font-size: 1.0em;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 3em;
+	color: #fff;	
+}
+h4 {
+	font-size: 1.5em;
+}
+.info {
+	font-size: 2em;
+}
+.countdownContainer {
+	height: 60px;
+	width: 300px;
+	text-align: center;
+}
+.contact {
+	margin-top: 5%;
+}
+#down {
+	margin-top: 3%;
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  	body {
+  		text-align: center;
+  	} 
+	.countdownContainer {
+		left: auto;
+		right: auto;
+	}
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  	body {
+  		text-align: center;
+  	}
+	.countdownContainer {
+		left: auto;
+		right: auto;
+	}
+}
